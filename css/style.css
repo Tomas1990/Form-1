@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "proximanova";
+	src: url(../fonts/proximanova-bold.otf);
+	font-style: bold;
+} /* Так и не нашел толкового ответа как подключить несколько стилей
+ шрифтов и использовать их в разных местах страницы */
+
+html body a {
+	text-decoration: none;
+	color: #B7B7B7;
+}
+	
+html body {
+	background-color: #F6F6F6;
+	font-family: "proximanova";
+}
+
+html body input {
+	background: #F0F0F0;
+	border: 0px solid #FFFFFF;
+	font-size: 14px;
+	color: #B7B7B7;
+	border-radius: 5px;
+	text-align: left;
+}
+
+html body #block1Title {
+	font-size: 22px;
+	color: #949494;
+	position: absolute;
+	top: 40px;
+	left: 270px;
+}
+
+html body #block1 {
+	border: 1px;
+	border-radius: 5px;
+	background: #FFFFFF;
+	box-shadow: 0 0 5px silver;
+	padding: 30px;
+	width: 330px;
+	height: 340px;
+	position: absolute;
+	top: 100px;
+	left: 270px;
+}
+
+html body #block1 input[name="first_name"] {
+	width: 146px;
+	height: 35px;
+	position: relative;
+	float: left;
+	border: 0px;
+	padding-left: 5px;
+}
+
+html body #block1 input[name="last_name"] {
+	width: 146px;
+	height: 35px;
+	position: relative;
+	left: 25px;
+	padding-left: 5px;
+/* Поздно понял, что надо было пользоваться margin'ом, 
+но переделывать уже просто нет времени */
+}
+
+html body #block1 input[name="username"] {
+	width: 322px;
+	height: 35px;
+	position: relative;
+	float: left;
+	top: 25px;
+	padding-left: 5px;
+}
+
+html body #block1 input[name="email"] {
+	width: 322px;
+	height: 35px;
+	position: relative;
+	float: left;
+	top: 50px;
+	padding-left: 5px;
+}
+
+html body #block1 input[name="password"] {
+	width: 322px;
+	height: 35px;
+	position: relative;
+	float: left;
+	top: 75px;
+	padding-left: 5px;
+}
+
+html body #block1 .checkbox #check {
+	display: none;
+}
+
+html body #block1 .checkbox .nicecheck {
+	display: block;
+	background: #F0F0F0;
+	height: 12px;
+	width: 12px;
+	position: relative;
+	border-radius: 5px;
+	float: left;
+	top: 110px;
+}
+
+html body #block1 input[type="checkbox"]:checked + .nicecheck{
+	background: #707070;
+}
+
+html body #block1 #agree {
+	font-size: 11px;
+	color: #DDDDDD;
+	float: left;
+	position: relative;
+	left: 20px;
+	top: 100px
+}
+
+html body input[name="registration"] {
+	background: #FEA15D;
+	color: white;
+	width: 95px;
+	height: 35px;
+	position: relative;
+	text-align: center;
+	margin: 105px 35%;
+	border: 0px;
+}
+
+html body #block1 p {
+	font-size: 11px;
+	color: #DDDDDD;
+	text-align: center;
+	position: relative;
+	top: -100px
+}
+
+html body #block2Title {
+	font-size: 22px;
+	color: #949494;
+	position: absolute;
+	top: 40px;
+	left: 700px;
+}
+
+html body #block2 {
+	border: 1px;
+	border-radius: 5px;
+	background: #FFFFFF;
+	box-shadow: 0 0 5px silver;
+	width: 320px;
+	height: 230px;
+	padding: 30px;
+	position: absolute;
+	top: 100px;
+	left: 700px;
+}
+
+html body #block2 input[name="email2"] {
+	width: 322px;
+	height: 35px;
+	position: relative;
+	float: left;
+	padding-left: 5px;
+}
+
+html body #block2 input[name="password2"] {
+	width: 322px;
+	height: 35px;
+	position: relative;
+	float: left;
+	top: 25px;
+	padding-left: 5px;
+}
+
+html body #block2 input[name="enter"] {
+	background: #A9DD7D;
+	color: white;
+	width: 95px;
+	height: 35px;
+	position: relative;
+	text-align: center;
+	margin: 75px 35%;
+	border: 0px;
+}
+
+html body #block2 p {
+	font-size: 11px;
+	color: #DDDDDD;
+	text-align: center;
+	position: relative;
+	top: -50px
+}
